@@ -12,6 +12,7 @@
     <script src="https://kit.fontawesome.com/ba428bcab2.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body class="body-bg">
     <header class="header">
@@ -31,6 +32,21 @@
                     <div class="button-s social__link"><a><i class="fab fa-instagram"></i></a></div>
                     <div class="button social__link social__link-phone"><a><i class="fas fa-phone-alt"></i> 267-506-8558</a></div>
                 </div>
+                <div class="header__sm-menu">
+                    <a href="#" class="header__sm-menu__link"><i class="fa fa-bars"></i></a>
+                    <div class="header__sm-menu__menu">
+                        <a href="#" class="header__sm-menu__menu-close"><i class="fas fa-times"></i></a>
+                        <ul class="page-navigation">
+                            <li class="page-navigation__link"><a href="#">Portfolio</a></li>
+                            <li class="page-navigation__link"><a href="#">Store</a></li>
+                        </ul>
+                        <div>
+                            <div class="button-s social__link"><a><i class="fab fa-facebook-f"></i> Beloved Decor</a><div class="social__link-text"><a href="#">Facebook</a></div></div>
+                            <div class="button-s social__link"><a><i class="fab fa-instagram"></i> beloved.decor</a><div class="social__link-text"><a href="#">Instagram</a></div></div>
+                            <div class="button social__link social__link-phone"><a><i class="fas fa-phone-alt"></i> 267-506-8558</a> <div class="social__link-text"><a href="#">267-506-8558</a></div></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="header__content">
                 <div class="header__content-info">
@@ -42,7 +58,8 @@
                     <a class="content-info__marketplace-button button-l">Facebook Marketplace</a>
                 </div>
                 <div class="header__content-photo">
-                    <img src="img/header-picture.png" alt="Blue choclate strawberries and flowers bouquet">
+                    <img class="header__content-photo-lg" src="img/header-picture.png" alt="Blue choclate strawberries and flowers bouquet">
+                    <img class="header__content-photo-sm" src="img/sm-header-picture.png">
                 </div>
             </div>
         </div>
@@ -218,5 +235,7 @@
     <footer class="footer">
         <p class="footer__text">© Beloved Decor 2021</p>
     </footer>
+
+    <script src="js/common.js"></script>
 </body>
 </html>

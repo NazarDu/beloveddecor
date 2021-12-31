@@ -85,6 +85,10 @@ p {
     margin-bottom: 50px;
 }
 
+.header__sm-menu {
+    display: none;
+}
+
 .header__navigation {
     display: flex;
     align-items: center;
@@ -174,6 +178,10 @@ p {
 
 .header__content-photo {
     width: 55%;
+}
+
+.header__content-photo-sm {
+    display: none;
 }
 
 .header__content-photo > img {
@@ -292,10 +300,10 @@ p {
 }
 
 .s-store__items__item-photo-container > img {
-    width: 19vw;
+    width: 18vw;
     height: auto;
     border-radius: 10px;
-    padding: 19px;
+    padding: 20px;
 }
 
 .s-store__items__item-info {
