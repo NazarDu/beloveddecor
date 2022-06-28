@@ -103,8 +103,6 @@ function initialPortfolio() {
     };
 };
 
-
-
 // Load more items to portfolio
 loadMorePortfolio.addEventListener('click', (e) => {
     // Adding more
@@ -124,8 +122,6 @@ loadMorePortfolio.addEventListener('click', (e) => {
     // Calling load effect
     loading(true);
 });
-
-
 
 // Loading animation
 function loading(more) {
@@ -157,19 +153,6 @@ function finish(more) {
         };
     };
 };
-
-
-// window.onload = function() {
-//     // Finish initial portfolio loading
-//     function finishLoading() {
-//         for (let i=0; i<=DOC.getElementsByClassName("instagram-media").length; i++) {
-//             if(DOC.getElementsByClassName("instagram-media")[i].style.backgroundColor == "white"){
-//                 DOC.getElementsByClassName("s-portfolio__items__item-link")[i].classList.remove('loading');
-//                 DOC.getElementsByClassName('s-portfolio__items__item-link__text')[i].style.display = "block";
-//             };
-//         };
-//     }; finishLoading();
-// };
 
 
 
@@ -204,8 +187,7 @@ function initialStore() {
     };
 };
 
-
-// Load more items to portfolio
+// Load more items to store
 loadMoreStore.addEventListener('click', (e) => {
     // Adding more
     for (let i = currentStoreItems; i < currentStoreItems + 4; i++) {
@@ -224,8 +206,6 @@ loadMoreStore.addEventListener('click', (e) => {
     // Calling load effect
     loadingStore(true);
 });
-
-
 
 // Loading animation
 function loadingStore(more) {
@@ -258,7 +238,6 @@ function finishStoreLoading(more) {
     };
 };
 
-
 window.onload = function() {
     // Finish initial portfolio loading
     function finishLoading() {
@@ -275,5 +254,15 @@ window.onload = function() {
     }; finishLoading();
 };
 
-// Remake loading new items in Store section
-// Check if items are loading
+// Check if iframes are loading properly and reload if not
+function checkLoading() {
+    if(DOC.readyState == 'complete' && !DOC.getElementsByTagName('iframe')[1]){
+        console.log('reloading');
+        location.reload();
+    };
+
+    console.log(document.readyState);
+}
+setInterval(checkLoading, 1000);
+
+// Optimize everything
